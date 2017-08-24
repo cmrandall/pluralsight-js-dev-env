@@ -1,5 +1,6 @@
 # Test against this version of Node.js
-environment:
+ests
+  -npm testenvironment:
   matrix:
     # node.js
     - nodejs_version: "6"
@@ -15,9 +16,9 @@ environment:
 test_script:
   # Output useful info for debugging.
   - node --version
-  - nmp --version
+  - npm --version
   # run tests
-  -npm test
+  - npm test
 
-#don't actually build
+# Don't actually build.
 build: off
